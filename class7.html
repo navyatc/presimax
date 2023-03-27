@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>new</title>
+        <style>
+            #mydiv{
+                width: 200px;
+                height: 200px;
+                background-color: coral;
+                border-radius: 20px;
+                margin: 20px;
+                padding: 20px;
+                animation-name: mybox;
+                animation-duration: 5s;
+                animation-iteration-count: 6;
+            }
+            @keyframes mybox{
+                0%{
+                    border-radius: 0;
+                    height: 500px;
+                    width: 699px;
+                    background-color: red;
+                    transform: translate(0,0);
+                }
+                50{
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    background-color: yellow;
+                    transform: translate(-50px,-50px);
+                }
+                50{
+                    border-radius: 50%;
+                    height: 500px;
+                    width: 120px;
+                background-color:green;
+                    transform: translate(-50px,-50px);
+                }
+                
+            }
+            body{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv" align="left"></div>
+    </body>
+
+</html>
